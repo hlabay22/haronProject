@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <title>Login</title>
+</head>
+<body>
+<!-- NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="#">Xaron</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+
+        
+          </form>
+
+        
+        <button type="submit" class="btn btn-danger" style="margin-left: 2em;">Login</button>
+        </div>
+      </nav>
+
+    <!-- Image -->
+      <div class="text-center">
+        <img src="openingPageImage/x.png" class="rounded" alt="x logo" height="200" width="350">  
+      </div>
+      
+
+      <!-- Container-->
+
+      <div class="jumbotron">
+        <p class="lead">Hello , You can login as a Traveller or as a Local Travel Guide</p>
+        
+        <!-- Login Opts Tab Selector -->
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+              <a class="nav-link active" data-toggle="tab" href="#home">Traveller Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" data-toggle="tab" href="#profile">Local Guide Login</a>
+            </li>
+
+          </ul>
+          <div id="myTabContent" class="tab-content">
+            <div class="tab-pane fade show active" id="home">
+              <!-- Traveller Login Form (1) -->
+              <br>
+                    <div class="col-md-6 login-form-1">
+                        <h3>Traveller Login</h3>
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Email *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Your Password *" value="" />
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" class="btnSubmit" value="Login" />
+                            </div>
+                            <div class="form-group">
+                                <a href="#" class="ForgetPwd">Forget Password?</a>
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <a href="#">Register as a Traveller</a>
+                            </div>
+                        </form>
+                    </div>
+
+            </div>
+            <div class="tab-pane fade" id="profile">
+              <!-- Travel Local Guide Login Form (2) -->
+              <br>
+              <div class="col-md-6 login-form-2">
+                <h3>Local Guide Login</h3>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Your Email *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placeholder="Your Password *" value="" />
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" class="btnSubmit" value="Login" />
+                    </div>
+                    <div class="form-group">
+
+                        <a href="#" class="ForgetPwd" value="Login">Forget Password?</a>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <a href="#">Register as a Local Travel Guide</a>
+                    </div>
+                </form>
+            </div>
+            </div>
+          </div>
+
+
+      </div>
+
+
+    
+</body>
+</html>
