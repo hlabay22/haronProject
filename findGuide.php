@@ -31,7 +31,7 @@ $date= date("d/m/Y");
         <div class="collapse navbar-collapse" id="navbarColor01">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="index.php">Home </a>
+              <a class="nav-link" href="indexR.php">Home </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="">Find a Local Guide <span class="sr-only">(current)</span></a>
