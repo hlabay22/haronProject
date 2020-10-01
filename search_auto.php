@@ -33,7 +33,7 @@ if ($mysqli2->connect_error) {
     $result = $mysqli2->query("SELECT * FROM localguideusers
     WHERE city = '$city'
     AND country = '$country'
-    AND lang1 = '$lang1'
+    -- AND lang1 = '$lang1'
     AND travelStyle1 = '$travelStyle1'
     AND transportationType = '$transport'
     ");
@@ -163,8 +163,9 @@ $guideImage=($_SESSION['guide_image']);
   <div class="card-body">
     <h4 class="card-title"><?php echo $guideName."\n"; echo $guideLastName."\n"; ?></h4>
     <br>
-    <img src="localGuideImages/<?php echo $guideImage;?>" alt=" " height="75" width="75">
-
+    <img src="data:image/jpeg;base64,<?php echo base64_encode( $guideImage) ?>" width=200 height=200/>
+    <br>
+    <br>
     <p class="card-text">You Can Contact Him at: <?php echo $guidePhone."\n"; ?> </p>
 
 
@@ -236,12 +237,12 @@ body {font-family: Arial, Helvetica, sans-serif;}
     <b>Gender: </b> <?php echo  $guideGender ?><br>
     <b>Transportation Type: </b> <?php echo  $guideTransport ?><br>
     <b>About : </b> <?php echo  $guideAbout ?><br>
+    <br>
     <b>Image :</b> 
-    
-    <img src="localGuideImages/<?php echo $guideImage;?>" alt=" " height="75" width="75">
+    <img src="data:image/jpeg;base64,<?php echo base64_encode( $guideImage) ?>" width=200 height=200/>
     </p>
   </div>
-  <?php echo $guideImage;?>
+  
 </div>
 
 <script>
